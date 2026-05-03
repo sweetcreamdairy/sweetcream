@@ -6,7 +6,7 @@ import BadgeSvg from "../images/landing_corner.svg";
 import WaveSvg from "../images/wave.svg";
 
 const PALE_PINK = "#f0cdb6";
-const SWEETGREEN = "#005851";
+const SWEETGREEN = "#067671";
 
 const IceCream = styled.div`
   height: auto;
