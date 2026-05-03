@@ -2,13 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { SceneWrapper } from "../components/styledElements";
 import BadgeSvg from "../images/events_corner.svg";
-import CakeSvg from "../images/cake.svg";
 import CartSvg from "../images/catering_cart.svg";
 import { cartAnimation } from "../helpers/animations";
-import CakeFormPdf from "../assets/cake_order_form.pdf";
 
 const YELLOW = "#faf9e1";
-const ORANGE = "#E5A88C";
 const CHARCOAL = "#414042";
 
 const Badge = styled.div`
@@ -44,20 +41,6 @@ const Cart = styled.div`
   }
 `;
 
-const CakeOne = styled.div`
-  width: 25%;
-  height: auto;
-  position: absolute;
-  top: 15%;
-  right: 10%;
-
-  @media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
-    width: 30%;
-    top: 20%;
-    right: 5%;
-  }
-`;
-
 const Heading = styled.div`
   position: absolute;
   top: ${(props) => props.top};
@@ -72,9 +55,6 @@ const Heading = styled.div`
 `;
 
 const TextBlock = styled.div`
-  &.first {
-    width: 45%;
-  }
   position: absolute;
   width: 40%;
   top: ${(props) => props.top};
@@ -99,84 +79,27 @@ const TextBlock = styled.div`
   }
 `;
 
-const EventsWrapper = styled.div`
-  @media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
-    ${TextBlock}.first {
-      top: 20%;
-      width: 50%;
-      left: 7%;
-    }
-    ${TextBlock}.second {
-      top: 40%;
-      width: 45%;
-      left: 50%;
-    }
-
-    ${Heading}.first {
-      top: 15%;
-      left: 7%;
-    }
-
-    ${Heading}.second {
-      top: 35%;
-      left: 50%;
-    }
-  }
-`;
-
 const SceneThree = (props) => (
   <SceneWrapper backgroundColor={YELLOW} height="1200px" mobileHeight="150vh">
-    <EventsWrapper>
-      <CakeOne>
-        <img src={CakeSvg} />
-      </CakeOne>
-      <Badge>
-        <img src={BadgeSvg} />
-      </Badge>
-      <Cart>
-        <img src={CartSvg} />
-      </Cart>
-      <Heading top="17%" left="10%" color={CHARCOAL} className="first">
-        <span>ICE CREAM CAKES</span>
-      </Heading>
-      <TextBlock top="25%" left="10%" color={CHARCOAL} className="first">
-        <p>
-          <span>Cakes are subject to availability</span>
-          {/* <span>
-            <a
-              href={CakeFormPdf}
-              download="cake_order_form.pdf"
-              className="bold"
-            >
-              {" "}
-              CLICK HERE
-            </a>{" "}
-            for our ice cream cake order form.
-          </span> */}
-        </p>
-        <p>
-          For any cake inquiries, please{" "}
-          <a href="mailto:info@sweetcreamdairy.com" className="bold">
-            CONTACT US
-          </a>
-          .
-        </p>
-      </TextBlock>
-
-      <Heading top="60%" left="50%" color={CHARCOAL} className="second">
-        <span>CATERING</span>
-      </Heading>
-      <TextBlock top="68%" left="50%" color={CHARCOAL} className="second">
-        <p>
-          Sweetcream comes to you! We offer catering services for parties and
-          events serving parties of all sizes.{" "}
-          <a href="mailto:info@sweetcreamdairy.com" className="bold">
-            CONTACT US
-          </a>{" "}
-          for more information.
-        </p>
-      </TextBlock>
-    </EventsWrapper>
+    <Badge>
+      <img src={BadgeSvg} />
+    </Badge>
+    <Cart>
+      <img src={CartSvg} />
+    </Cart>
+    <Heading top="17%" left="10%" color={CHARCOAL}>
+      <span>CATERING</span>
+    </Heading>
+    <TextBlock top="25%" left="10%" color={CHARCOAL}>
+      <p>
+        Sweetcream comes to you! We offer catering services for parties and
+        events serving parties of all sizes.{" "}
+        <a href="mailto:info@sweetcreamdairy.com" className="bold">
+          CONTACT US
+        </a>{" "}
+        for more information.
+      </p>
+    </TextBlock>
   </SceneWrapper>
 );
 
