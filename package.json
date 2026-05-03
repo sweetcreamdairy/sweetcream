@@ -26,6 +26,9 @@
     "react-icons": "^3.4.0",
     "styled-components": "^4.2.0"
   },
+  "resolutions": {
+    "sharp": "0.32.6"
+  },
   "keywords": [
     "gatsby"
   ],
