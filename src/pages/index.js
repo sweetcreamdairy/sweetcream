@@ -90,7 +90,7 @@ const IndexPage = () => (
     <TextBlock>
       <p>
         <div className="bold">HANDMADE IN BIDDEFORD</div>
-        <div>Now scooping at our new location</div>
+        <div>Now open 7 days a week</div>
       </p>
     </TextBlock>
   </SceneWrapper>
