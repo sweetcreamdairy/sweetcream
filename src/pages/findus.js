@@ -179,12 +179,12 @@ const SceneFour = (props) => (
       </TextBlock>
       <TextBlock top="37%" left="47%" color={CHARCOAL} className="message">
         <p>
-          <span>Mon: CLOSED</span>
-          <span>Tue: CLOSED</span>
-          <span>Wed: CLOSED</span>
-          <span>Thu: CLOSED</span>
-          <span>Fri: 1pm - 8pm</span>
-          <span>Sat: 1pm - 8pm</span>
+          <span>Mon: 1pm - 8pm</span>
+          <span>Tue: 1pm - 8pm</span>
+          <span>Wed: 1pm - 8pm</span>
+          <span>Thu: 1pm - 8pm</span>
+          <span>Fri: 1pm - 9pm</span>
+          <span>Sat: 1pm - 9pm</span>
           <span>Sun: 1pm - 8pm</span>
         </p>
 
@@ -195,17 +195,13 @@ const SceneFour = (props) => (
       <TextBlock top="65%" left="5%" color={CHARCOAL} className="second">
         <span className="header">PINTS</span>
         <p className="spaced">
-          <span>The Cheese Iron - Scarborough, ME</span>
           <span>Monte's Fine Foods - Portland, ME</span>
-          <span>Frith Farm - Scarborough, ME</span>
           <span>New Morning Natural Foods - Kennebunk, ME</span>
           <span>The Maine Homestead Market - Lyman, ME</span>
           <span>Frinklepod Farm - Kennebunk, ME (Seasonal)</span>
           <span>Jordan's Farm - Cape Elizabeth, ME</span>
           <span>Harris Farm - Dayton, ME</span>
-          <span>Part and Parcel - Biddeford, ME</span>
           <span>F.O. Goldthwaite's - Biddeford, ME</span>
-          <span>Solo Cucina Market - South Portland, ME</span>
 
           <span>And more to come!</span>
         </p>
