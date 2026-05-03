@@ -199,21 +199,14 @@ const SceneTwo = () => (
         </p>
         <SourcingList>
           <div className="column">
-            <span>Blue Sky Produce</span>
-            <span>Doles Orchard</span>
-            <span>Elements Coffee</span>
-            <span>Frith Farm</span>
+            <span>Passamaquoddy Wild Blueberry Farm</span>
             <span>Harris Farm</span>
-            <span>Foxes Ridge Farm</span>
             <span>McDougal Orchards</span>
           </div>
           <div className="column">
-            <span>Our Farm</span>
             <span>Sawyer's Maple Farm</span>
             <span>Snell Farm</span>
-            <span>Speckled Ax Coffee</span>
             <span>Stevenson's Strawberries</span>
-            <span>The Farm</span>
           </div>
         </SourcingList>
       </TextBlock>
